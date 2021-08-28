@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.7"
 
   s.source       = { :git => "https://github.com/donik/DisplayKit.git", :tag => s.version }
-  c.source_files  = "Display/**/*.{h,m,swift}"
+  s.source_files  = "DisplayKit/**/*.{h,m,swift}"
   s.requires_arc = true
 end
