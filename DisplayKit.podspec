@@ -12,21 +12,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.7"
 
   s.source       = { :git => "https://github.com/donik/DisplayKit.git", :tag => s.version }
+  c.source_files  = "Display/**/*.{h,m,swift}"
   s.requires_arc = true
-
-  s.subspec 'Core' do |c|
-    c.source_files  = "Display/**/*.{h,m,swift}"
-  end
-
-  s.subspec 'AsyncDisplayKit' do |ask|
-  	ask.dependency 'AsyncDisplayKit', :git => 'https://github.com/donik/ASDisplayKit.git'
-    ask.dependency 'DisplayKit/Core'
-  end
-
-  s.subspec 'SSignalKit' do |ssk|
-  	ssk.dependency 'SSignalKit', :git => "https://github.com/donik/Signals.git"
-    ssk.dependency 'DisplayKit/Core'
-  end
-
-  s.default_subspecs = 'Core', 'AsyncDisplayKit', 'SSignalKit'
 end
