@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DisplayKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.1"
   s.summary      = "DisplayKit FOR AsyncDisplayKit UI Elements"
   s.homepage     = "https://github.com/donik/DisplayKit"
   s.license      = "MIT"
